@@ -1,0 +1,27 @@
+/* Estilo general para el body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Estilo para el párrafo que será eliminado */
+.fn-remove-me {
+  color: red;
+  text-decoration: line-through;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* Estilo para el div donde se insertará el texto dinámicamente */
+[data-function='printHere'] {
+  background-color: #0078d4;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}

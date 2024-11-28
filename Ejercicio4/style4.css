@@ -1,0 +1,104 @@
+/* Estilo general para el body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para la lista de países */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Estilo para el div con la lista de coches */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+}
+
+ul li {
+  padding: 8px;
+  background-color: #e0f7fa;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+/* Estilo para los divs con título e imagen */
+div {
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+div h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+div img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Estilo para el botón que elimina el último div */
+button {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #005ea6;
+}
+
+/* Estilo para los botones que eliminan los divs individuales */
+div button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+div button:hover {
+  background-color: #c0392b;
+}

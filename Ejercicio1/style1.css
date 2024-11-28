@@ -1,0 +1,73 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Estilo para el botón con la clase .showme */
+.showme {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.showme:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para el h1 con id #pillado */
+#pillado {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #0078d4;
+}
+
+/* Estilo general para los párrafos */
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #0078d4;
+}
+
+/* Estilo específico para los elementos con clase .pokemon */
+.pokemon {
+  font-style: italic;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #d32f2f;
+}
+
+/* Estilo para elementos con data-function="testMe" */
+[data-function='testMe'] {
+  display: inline-block;
+  background-color: #ffeb3b;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+[data-function='testMe']:hover {
+  transform: scale(1.1);
+  background-color: #ffe082;
+}
+
+/* Estilo adicional para el tercer elemento con data-function="testMe" */
+[data-function='testMe']:nth-of-type(3) {
+  color: #fff;
+  background-color: #f57c00;
+}

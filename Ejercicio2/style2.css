@@ -1,0 +1,78 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+/* Estilo para los divs creados dinámicamente */
+div {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estilo para los divs que contienen un solo párrafo */
+div > p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilo para el div que contiene múltiples párrafos */
+div > p {
+  margin-bottom: 5px;
+}
+
+/* Estilo para el h2 con la clase .fn-insert-here */
+.fn-insert-here {
+  color: #0078d4;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los elementos li dentro de ul generados dinámicamente */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background-color: #0078d4;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Estilo para los elementos con la clase .fn-remove-me */
+.fn-remove-me {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* Estilo para el párrafo "Voy en medio!" */
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e91e63;
+  text-align: center;
+}
+
+/* Estilo para los divs con la clase .fn-insert-here */
+.fn-insert-here {
+  border: 2px dashed #4caf50;
+  background-color: #e8f5e9;
+  padding: 15px;
+}
+
+/* Estilo para el párrafo dentro de los divs con la clase .fn-insert-here */
+.fn-insert-here p {
+  color: #4caf50;
+  font-weight: bold;
+}
