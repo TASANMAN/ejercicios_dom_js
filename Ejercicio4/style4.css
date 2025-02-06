@@ -2,11 +2,26 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  margin: 20px;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('https://www.transparenttextures.com/patterns/skulls.png'); /* Imagen de calaveras */
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: top left;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal para centrar el contenido */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
 }
 
 /* Estilo para la lista de países */
@@ -14,58 +29,71 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 20px 0;
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 ul li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 ul li:last-child {
   border-bottom: none;
 }
 
-/* Estilo para el div con la lista de coches */
-ul {
+ul li:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Estilo para la lista de coches */
+ul.cars-list {
   list-style-type: none;
   padding: 0;
   margin-top: 20px;
   background-color: #f7f7f7;
   border-radius: 5px;
-  width: 80%;
+  width: 100%;
   max-width: 600px;
 }
 
-ul li {
+ul.cars-list li {
   padding: 8px;
   background-color: #e0f7fa;
   margin: 5px 0;
   border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+ul.cars-list li:hover {
+  background-color: #0078d4;
 }
 
 /* Estilo para los divs con título e imagen */
-div {
-  margin: 20px;
+div.country-div {
+  margin: 20px 0;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   text-align: center;
+  box-sizing: border-box;
 }
 
-div h4 {
+div.country-div h4 {
   font-size: 20px;
   color: #333;
 }
 
-div img {
+div.country-div img {
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -74,7 +102,7 @@ div img {
 
 /* Estilo para el botón que elimina el último div */
 button {
-  background-color: #0078d4;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -82,14 +110,15 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #005ea6;
+  background-color: #000000;
 }
 
 /* Estilo para los botones que eliminan los divs individuales */
-div button {
+div.country-div button {
   background-color: #e74c3c;
   color: white;
   padding: 8px 16px;
@@ -97,8 +126,73 @@ div button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
-div button:hover {
+div.country-div button:hover {
   background-color: #c0392b;
+}
+
+/* Estilo para los inputs */
+input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 5px #000000;
+}
+
+/* Estilo para los enlaces */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  ul,
+  .cars-list,
+  div.country-div {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  div.country-div h4 {
+    font-size: 18px;
+  }
+
+  ul li,
+  ul.cars-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  div.country-div h4 {
+    font-size: 16px;
+  }
+
+  ul li,
+  ul.cars-list li {
+    font-size: 12px;
+  }
 }

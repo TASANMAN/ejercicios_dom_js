@@ -1,9 +1,14 @@
 /* Estilo general para el body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 20px;
+  background-color: #f9f9f9; /* Color suave de fondo */
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilo para el párrafo que será eliminado */
@@ -16,7 +21,7 @@ body {
 
 /* Estilo para el div donde se insertará el texto dinámicamente */
 [data-function='printHere'] {
-  background-color: #0078d4;
+  background-color: #0078d4; /* Azul más oscuro */
   color: white;
   padding: 20px;
   border-radius: 5px;
@@ -24,4 +29,105 @@ body {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Estilo para los encabezados (h1, h4) */
+h1,
+h4 {
+  text-align: center;
+  color: #00509e; /* Azul más oscuro */
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* Estilos para la lista ul > li */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+ul li {
+  background-color: #1e90ff; /* Azul más brillante */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #00509e; /* Cambio de tono al pasar el cursor */
+}
+
+/* Estilo para los divs creados dinámicamente (con h4 y img) */
+div {
+  background-color: #b0d4ff; /* Azul claro */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+div:hover {
+  transform: scale(1.05); /* Efecto de hover para los divs */
+}
+
+/* Estilos para las imágenes dentro de los divs */
+div img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #00509e; /* Azul oscuro para los botones */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003a75; /* Azul aún más oscuro al pasar el cursor */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  h1,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+    width: 45%; /* Ajustar tamaño en pantallas más pequeñas */
+  }
+
+  div {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
 }

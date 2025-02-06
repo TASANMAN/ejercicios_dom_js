@@ -19,7 +19,5 @@ const testMeElements = document.querySelectorAll('[data-function="testMe"]')
 console.log(testMeElements)
 
 // 1.6 Usa querySelectorAll para mostrar por consola el 3er elemento con el atributo data-function="testMe"
-const thirdTestMeElement = document.querySelectorAll(
-  '[data-function="testMe"]'
-)[2]
+const thirdTestMeElement = testMeElements[2]
 console.log(thirdTestMeElement)
